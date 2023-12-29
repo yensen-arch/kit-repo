@@ -2,7 +2,7 @@ import React from 'react'
 
 const DocumentTable = () => {
   return (
-    <div align="center">
+    <div className='text-center'>
       <table className="w-3/5 border-collapse mt-8">
       <thead className="mb-4 mt-2">
       <tr className="bg-gray-500 mb-4">
