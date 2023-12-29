@@ -1,3 +1,4 @@
+import VerticalRectangle from '@/components/VerticalRectangle'
 import Image from 'next/image'
 
 export default function Home() {
