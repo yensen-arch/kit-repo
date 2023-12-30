@@ -2,8 +2,8 @@ import React from "react";
 
 const LoginForm = () => {
   return (
-    <section className="flex justify-center items-center sm:w-[50rem]">
-      <div className="flex flex-col justify-center items-center w-[30rem]  space-y-5 text-black rounded-xl border-2 shadow-xl">
+    <section className="flex justify-center items-center md:w-[50rem]">
+      <div className="flex flex-col justify-center items-center w-full md:w-[40rem] space-y-7 text-black rounded-xl border-2 shadow-xl">
         <label htmlFor="Username" className="hidden">
           Phone No./ Username/ Email
         </label>
@@ -24,10 +24,10 @@ const LoginForm = () => {
           className="w-[26rem] bg-[#D8D9DA] text-center py-4 text-md border-2 rounded-xl placeholder:text-black"
           placeholder="Password"
         />
-        <button className="border-2 px-8 py-4 rounded-xl bg-[#D8D9DA]">
+        <button className="border-2 px-8 py-4 rounded-xl bg-[#D8D9DA] hover:bg-gray-400 hover:shadow-xl hover:underline">
           LOG IN
         </button>
-        <p className="underline">Forget Password?</p>
+        <p className="underline hover:cursor-pointer">Forgot Password?</p>
         <div className="flex flex-row">
           <hr className="border-t-2 border-gray-300 w-[13.3rem] my-3" />
           <p className="mx-4">OR</p>
