@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const InfiniteCarousel = () => {
   const imageSources = [
@@ -23,19 +24,21 @@ const InfiniteCarousel = () => {
 
   const imgStyle = {
     width: '800px', // Adjust as needed
-    height: '500px', // Maintain aspect ratio
+    height: '375px', // Maintain aspect ratio
     display: 'block',
   };
 
   return (
     <div>
       {imageSources.map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          alt={`Image ${index + 1}`}
-          style={{ ...imgStyle, display: index === currentIndex ? 'block' : 'none' }}
-        />
+       <Image
+       key={index}
+       src={src}
+       alt={`Image ${index + 1}`}
+       width={800} // Already added
+       height={500} // Add this line
+       style={{ ...imgStyle, display: index === currentIndex ? 'block' : 'none' }}
+     />
       ))}
     </div>
   );

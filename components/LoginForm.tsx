@@ -2,7 +2,7 @@ import React from "react";
 
 const LoginForm = () => {
   return (
-    <section className="flex justify-center items-center">
+    <section className="flex justify-center items-center sm:w-[50rem]">
       <div className="flex flex-col justify-center items-center w-[30rem]  space-y-5 text-black rounded-xl border-2 shadow-xl">
         <label htmlFor="Username" className="hidden">
           Phone No./ Username/ Email

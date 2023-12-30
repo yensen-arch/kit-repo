@@ -1,28 +1,19 @@
+import Image from 'next/image';
 
-import React, { useEffect, useState } from 'react';
-import '../styles/aboutcard.css';
-
-const Home: React.FC = () => {
-  const [aboutUsText, setAboutUsText] = useState<string>('');
-
-  useEffect(() => {
-    // Retrieve and update content on page load
-    const storedAboutUsText = localStorage.getItem('aboutUsText');
-    setAboutUsText(storedAboutUsText || '');
-  }, []);
-
-  const updateAboutUsContent = (updatedText: string) => {
-    setAboutUsText(updatedText);
-  };
-
+export default function AboutCard() {
   return (
-    <div className="card">
-      <div id="aboutUsSection">
-        <h2>ABOUT</h2>
-        <p id="aboutUsText">{aboutUsText}</p>
+    <main className='w-full md:w-[800px] h-[250px]'>
+      <div className="rounded-lg border h-full shadow-sm w-full bg-[#7fdbda]">
+        <div className="flex-col space-y-1.5 p-6 flex justify-center border-b">
+          <h3 className="text-2xl font-semibold leading-none tracking-tight">About Us</h3>
+        </div>
+        <div className="p-6">
+          <p className="text-lg">
+            We are a team of passionate individuals dedicated to providing the best experience for our customers. Our
+            mission is to deliver innovative solutions that make a difference.
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
   );
-};
-
-export default Home;
+}
