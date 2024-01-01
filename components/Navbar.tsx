@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const Header = () => {
@@ -10,19 +10,23 @@ const Header = () => {
   };
 
   return (
-    <div className="  flex flex-col ">
-      <div className="w-full flex justify-between items-center py-3 pr-4  bg-slate-300">
-        <button
-          type="button"
-          onClick={toggleDropdown}
-          className="  inline-flex items-center  px-5 py-2 border border-transparent text-lg font-medium rounded-2xl text-white bg-indigo-400 hover:bg-indigo-500  ml-auto"
-        >
-          <img src="Icon.svg" className="h-6 mr-2"></img>
-          Profile
-        </button>
+    <div className="  flex flex-col shadow-2xl">
+      <div className="w-full  justify-start  py-0 pr-0 bg-orange-100">
+        <div className="flex ">
+          <Link href="https://commerce.gov.in/" target="_blank">
+            <img src="Min.webp" className="w-36 h-19 mx-8 pt-6" />
+          </Link>
+          <img src="MakeIndia.webp" className="w-36 h-24 ml-10 pt-4 pb-0" />
+          <div className="w-full flex justify-end  py-3 pr-1">
+            <img src="Azadi.webp" className="w-24 h-15 mx-4" />
+            <Link href="https://www.india.gov.in/" target="_blank">
+              <img src="nationalEmblem.png" className="w-16 h-15 ml-8" />
+            </Link>
+          </div>
+        </div>
 
         {isDropdownOpen && (
-          <div className="absolute right-2 top-12 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 ">
+          <div className=" absolute right-2 top-44 w-48 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10 ">
             <div
               className="py-1"
               role="menu"
@@ -55,31 +59,59 @@ const Header = () => {
         )}
       </div>
 
-      <nav className="w-full px-4 bg-slate-400 p-2 ">
-        <ul className="flex px-4 justify-between mx-20 ">
-          <li>
+      <nav className="w-full px-4  bg-blue-500 p-2 ">
+        <ul className="flex pt-1  justify-start  sm:flex-sm">
+          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-gray-900 hover:text-slate-200 text-lg"
+              className="text-white hover:border-b-2  sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Home
             </Link>
           </li>
-          <li>
-            <Link href="#" className="text-black hover:text-slate-200 text-lg">
+          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+            <Link
+              href="#"
+              className="text-white hover:border-b-2 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+            >
               Services
             </Link>
           </li>
-          <li>
-            <Link href="#" className="text-black hover:text-slate-200 text-lg">
+          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+            <Link
+              href="#"
+              className="text-white hover:border-b-2 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+            >
               Media
             </Link>
           </li>
-          <li>
-            <Link href="#" className="text-black hover:text-slate-200 text-lg">
+          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+            <Link
+              href="#"
+              className="text-white hover:border-b-2 sm:text-sm md:text-base lg:text-lg xl:text-xl "
+            >
               Contact us
             </Link>
           </li>
+          <button
+            type="button"
+            onClick={toggleDropdown}
+            className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-slate-300 hover:border-1 border-black  ml-auto"
+          >
+            {isDropdownOpen ? (
+              <img
+                src="HamburgerOpen.svg"
+                alt="Close Icon"
+                className="h-7 mr-0"
+              />
+            ) : (
+              <img
+                src="HamburgerClosed.svg"
+                alt="Open Icon"
+                className="h-7 mr-0"
+              />
+            )}
+          </button>
         </ul>
       </nav>
     </div>
