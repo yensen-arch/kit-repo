@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex flex-col gap-5 mx-auto lg:flex-row mb-8">
           <div className="flex flex-col-reverse lg:flex-row">
             <VerticalRectangle />
-            <div className="flex flex-col gap-5 lg:ml-4 mb-5">
+            <div className="flex flex-col gap-5 lg:ml-10 mb-5">
               <Carousel />
               <AboutCard />
             </div>

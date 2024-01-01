@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className="  flex flex-col shadow-2xl">
-      <div className="w-full  justify-start  py-0 pr-0 bg-orange-100">
+      <div className="w-full  justify-start  py-0 pr-0 bg-yellow-50">
         <div className="flex ">
           <Link href="https://commerce.gov.in/" target="_blank">
             <img src="Min.webp" className="w-36 h-19 mx-8 pt-6" />
@@ -59,12 +59,12 @@ const Header = () => {
         )}
       </div>
 
-      <nav className="w-full px-4  bg-blue-500 p-2 ">
+      <nav className="w-full px-4  bg-gray-500 p-2 ">
         <ul className="flex pt-1  justify-start  sm:flex-sm">
           <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-white hover:border-b-2  sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-zinc-800 hover:border-b-2  border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Home
             </Link>
@@ -72,7 +72,7 @@ const Header = () => {
           <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-white hover:border-b-2 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Services
             </Link>
@@ -80,7 +80,7 @@ const Header = () => {
           <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-white hover:border-b-2 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Media
             </Link>
@@ -88,7 +88,7 @@ const Header = () => {
           <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-white hover:border-b-2 sm:text-sm md:text-base lg:text-lg xl:text-xl "
+              className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl "
             >
               Contact us
             </Link>
@@ -96,7 +96,7 @@ const Header = () => {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-slate-300 hover:border-1 border-black  ml-auto"
+            className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-zinc-300 hover:border-1 border-black  ml-auto"
           >
             {isDropdownOpen ? (
               <img

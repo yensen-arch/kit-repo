@@ -3,7 +3,7 @@ import React from "react";
 const LoginForm = () => {
   return (
     <section className="flex justify-center items-center md:w-[50rem]">
-      <div className="flex flex-col justify-center items-center w-full md:w-[40rem] space-y-7 text-black rounded-xl border-2 shadow-xl">
+      <div className="flex flex-col justify-center items-center w-full md:w-[40rem] space-y-7 text-black rounded-xl border-2 shadow-xl bg-yellow-50">
         <label htmlFor="Username" className="hidden">
           Phone No./ Username/ Email
         </label>
@@ -11,7 +11,7 @@ const LoginForm = () => {
         <input
           id="Username"
           type="text"
-          className="w-[26rem] bg-[#D8D9DA] text-center py-4 text-md border-2 rounded-xl placeholder:text-black"
+          className="w-[26rem] bg-gray-500 text-center py-4 text-md border-2 rounded-xl placeholder:text-zinc-800"
           placeholder="Phone No./ Username/ Email"
         />
 
@@ -21,10 +21,10 @@ const LoginForm = () => {
         <input
           id="Password"
           type="password"
-          className="w-[26rem] bg-[#D8D9DA] text-center py-4 text-md border-2 rounded-xl placeholder:text-black"
+          className="w-[26rem] bg-gray-500 text-center py-4 text-md border-2 rounded-xl placeholder:text-zinc-800"
           placeholder="Password"
         />
-        <button className="border-2 px-8 py-4 rounded-xl bg-[#D8D9DA] hover:bg-gray-400 hover:shadow-xl hover:underline">
+        <button className="border-2 px-8 py-4 rounded-xl bg-zinc-300 hover:bg-gray-400 hover:shadow-xl hover:underline">
           LOG IN
         </button>
         <p className="underline hover:cursor-pointer">Forgot Password?</p>
