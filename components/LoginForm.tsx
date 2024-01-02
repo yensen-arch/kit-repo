@@ -11,7 +11,7 @@ const LoginForm = () => {
         <input
           id="Username"
           type="text"
-          className="w-[26rem] bg-gray-500 text-center py-4 text-md border-2 rounded-xl placeholder:text-zinc-800"
+          className="w-[26rem] bg-orange-200 hover:bg-orange-300 text-center py-4 text-md border-2 rounded-xl placeholder:text-zinc-800"
           placeholder="Phone No./ Username/ Email"
         />
 
@@ -21,13 +21,13 @@ const LoginForm = () => {
         <input
           id="Password"
           type="password"
-          className="w-[26rem] bg-gray-500 text-center py-4 text-md border-2 rounded-xl placeholder:text-zinc-800"
+          className="w-[26rem] bg-orange-200 hover:bg-orange-300 text-center py-4 text-md border-2 rounded-xl placeholder:text-zinc-800"
           placeholder="Password"
         />
-        <button className="border-2 px-8 py-4 rounded-xl bg-zinc-300 hover:bg-gray-400 hover:shadow-xl hover:underline">
+        <button className="border-2 px-8 py-4 rounded-xl bg-orange-400 hover:bg-orange-500 hover:shadow-xl hover:underline">
           LOG IN
         </button>
-        <p className="underline hover:cursor-pointer">Forgot Password?</p>
+        <p className="underline hover:cursor-pointer text-blue-800">Forgot Password?</p>
         <div className="flex flex-row">
           <hr className="border-t-2 border-gray-300 w-[13.3rem] my-3" />
           <p className="mx-4">OR</p>
@@ -35,7 +35,7 @@ const LoginForm = () => {
         </div>
         <div className="flex items-center space-x-4 pb-5">
           <p>
-            Don't have an account?<span className="ml-2">Sign Up</span>
+            Don't have an account?<span className="ml-2 text-blue-800 underline">Sign Up</span>
           </p>
         </div>
       </div>

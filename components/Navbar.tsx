@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className="  flex flex-col shadow-2xl">
-      <div className="w-full  justify-start  py-0 pr-0 bg-yellow-50">
+      <div className="w-full  justify-start  py-0 pr-0 bg-orange-100">
         <div className="flex ">
           <Link href="https://commerce.gov.in/" target="_blank">
             <img src="Min.webp" className="w-36 h-19 mx-8 pt-6" />
@@ -35,49 +35,49 @@ const Header = () => {
             >
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100 border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
                 role="menuitem"
               >
                 Home
               </Link>
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100  border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
                 role="menuitem"
               >
                 Services
               </Link>
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100  border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
                 role="menuitem"
               >
                 Media
               </Link>
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100  border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
                 role="menuitem"
               >
                 Contact us
               </Link>
               <Link
                 href="#"
-                className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100  border-b border-solid "
+                className="block px-2 py-2 text-sm text-gray-700 hover:bg-orange-200  border-b border-solid "
                 role="menuitem"
               >
                 Change Industry
               </Link>
               <Link
                 href="#"
-                className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-solid"
+                className="block px-2 py-2 text-sm text-gray-700 hover:bg-orange-200 border-b border-solid"
                 role="menuitem"
               >
                 Personal Details
               </Link>
               <Link
                 href="#"
-                className="block px-2 py-2 text-sm text-gray-700 bg-slate-100 hover:bg-slate-200"
+                className="block px-2 py-2 text-sm text-gray-700 bg-slate-100 hover:bg-orange-200"
                 role="menuitem"
               >
                 Log Out
@@ -87,12 +87,12 @@ const Header = () => {
         )}
       </div>
 
-      <nav className="w-full px-4  bg-gray-500 p-2 ">
+      <nav className="w-full px-4 bg-blue-700 p-2 ">
         <ul className="flex pt-1  justify-start  sm:flex-sm">
-          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+        <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="hidden lg:flex md:flex text-zinc-800 hover:border-b-2  border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Home
             </Link>
@@ -100,7 +100,7 @@ const Header = () => {
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Services
             </Link>
@@ -108,7 +108,7 @@ const Header = () => {
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Media
             </Link>
@@ -116,7 +116,7 @@ const Header = () => {
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl "
+              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Contact us
             </Link>
@@ -124,7 +124,7 @@ const Header = () => {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-zinc-300 hover:border-1 border-black  ml-auto"
+            className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-orange-200 hover:border-1 border-black  ml-auto"
           >
             {isDropdownOpen ? (
               <img

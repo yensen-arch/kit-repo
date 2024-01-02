@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function VerticalRectangle() {
   return (
     <main>
-      <div className="rounded-lg border text-card-foreground shadow-sm w-full md:w-[350px] bg-[#61677A] h-[650.35px]">
+      <div className="rounded-lg border text-card-foreground shadow-sm w-full md:w-[350px] bg-blue-400 h-[650.35px]">
         <div className="flex flex-col space-y-1.5 p-6">
           <h3 className="text-2xl font-semibold leading-none tracking-tight">Important Notice</h3>
         </div>
