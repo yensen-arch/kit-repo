@@ -35,6 +35,34 @@ const Header = () => {
             >
               <Link
                 href="#"
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100 border-b border-solid "
+                role="menuitem"
+              >
+                Home
+              </Link>
+              <Link
+                href="#"
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100  border-b border-solid "
+                role="menuitem"
+              >
+                Services
+              </Link>
+              <Link
+                href="#"
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100  border-b border-solid "
+                role="menuitem"
+              >
+                Media
+              </Link>
+              <Link
+                href="#"
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm text-gray-700 bg-orange-50 hover:bg-orange-100  border-b border-solid "
+                role="menuitem"
+              >
+                Contact us
+              </Link>
+              <Link
+                href="#"
                 className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100  border-b border-solid "
                 role="menuitem"
               >
@@ -64,12 +92,12 @@ const Header = () => {
           <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-zinc-800 hover:border-b-2  border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="hidden lg:flex md:flex text-zinc-800 hover:border-b-2  border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Home
             </Link>
           </li>
-          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+          <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
               className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
@@ -77,7 +105,7 @@ const Header = () => {
               Services
             </Link>
           </li>
-          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+          <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
               className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl"
@@ -85,7 +113,7 @@ const Header = () => {
               Media
             </Link>
           </li>
-          <li className="md:px-6 sm:px-4 lg:px-8 mx-2">
+          <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
               className="text-zinc-800 hover:border-b-2 border-zinc-800 sm:text-sm md:text-base lg:text-lg xl:text-xl "
