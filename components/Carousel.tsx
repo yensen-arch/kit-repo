@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const InfiniteCarousel = () => {
   const imageSources = [
@@ -22,24 +23,73 @@ const InfiniteCarousel = () => {
     return () => clearInterval(interval);
   }, [currentIndex, imageSources.length]);
 
-  const imgStyle = {
-    width: '800px', // Adjust as needed
-    height: '375px', // Maintain aspect ratio
-    display: 'block',
+  const containerStyle: React.CSSProperties = {
+    position: 'relative',
+    width: '100%',
+    maxWidth: '800px',
+    height: '100%',
+    maxHeight: '380px',
+    margin: '0 auto',
+    overflow: 'hidden',
+  };
+
+  const imgContainerStyle: React.CSSProperties = {
+    display: 'flex',
+    transition: 'transform 0.5s ease-in-out',
+    transform: `translateX(-${currentIndex * 100}%)`,
+  };
+
+  const arrowContainerStyle: React.CSSProperties = {
+    position: 'absolute',
+    top: '50%',
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    zIndex: 1,
+  };
+
+  const arrowStyle: React.CSSProperties = {
+    cursor: 'pointer',
+    color: 'white',
+    background: 'rgba(0, 0, 0, 0.5)',
+    padding: '10px',
+    borderRadius: '50%',
+  };
+
+  const navigateTo = (direction: 'prev' | 'next') => {
+    if (direction === 'prev') {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? imageSources.length - 1 : prevIndex - 1
+      );
+    } else if (direction === 'next') {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === imageSources.length - 1 ? 0 : prevIndex + 1
+      );
+    }
   };
 
   return (
-    <div>
-      {imageSources.map((src, index) => (
-       <Image
-       key={index}
-       src={src}
-       alt={`Image ${index + 1}`}
-       width={800} // Already added
-       height={500} // Add this line
-       style={{ ...imgStyle, display: index === currentIndex ? 'block' : 'none' }}
-     />
-      ))}
+    <div style={containerStyle}>
+      <div style={imgContainerStyle}>
+        {imageSources.map((src, index) => (
+          <Image
+            key={index}
+            src={src}
+            alt={`Image ${index + 1}`}
+            width={800}
+            height={500}
+            style={{ flex: '0 0 auto' }}
+          />
+        ))}
+      </div>
+      <div style={arrowContainerStyle}>
+        <div style={arrowStyle} onClick={() => navigateTo('prev')}>
+          <FaChevronLeft size={30} />
+        </div>
+        <div style={arrowStyle} onClick={() => navigateTo('next')}>
+          <FaChevronRight size={30} />
+        </div>
+      </div>
     </div>
   );
 };

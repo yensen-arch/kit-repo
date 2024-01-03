@@ -1,4 +1,6 @@
-import VerticalRectangle from '@/components/VerticalRectangle'
+// import VerticalRectangle from '@/components/VerticalRectangle'
+import ImportantNotice from '../components/Important Notice'
+import NewsEvent from '../components/news-event'
 import Navbar from '../components/Navbar'
 import Image from 'next/image'
 import LoginForm from '@/components/LoginForm'
@@ -15,7 +17,7 @@ export default function Home() {
         {/* First Row */}
         <div className="flex flex-col gap-5 mx-auto lg:flex-row mb-8">
           <div className="flex flex-col-reverse lg:flex-row">
-            <VerticalRectangle />
+            <ImportantNotice />
             <div className="flex flex-col gap-5 lg:ml-28 mb-5">
               <Carousel />
               <AboutCard />
@@ -25,7 +27,7 @@ export default function Home() {
 
         {/* Second Row */}
         <div className="flex flex-col gap-5 mx-auto lg:flex-row mb-8">
-          <VerticalRectangle />
+          <NewsEvent />
           <div className='flex flex-col gap-5 lg:ml-24'>
           <LoginForm />
           </div>
