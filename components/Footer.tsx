@@ -1,11 +1,18 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+
 
 const Footer = () => {
   return (
     <footer>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-      <div className='p-10 bg-blue-700 text-gray-200'>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
+      />
+      <div className='p-10 bg-gray-500 text-gray-200'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
             <div className='mb-5'>
@@ -27,7 +34,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='mb-5'>
-            <ul>
+              <ul>
                 <Link href="/"><li className="pb-4 "><i className="fa fa-chevron-right"></i> Holiday List 2024</li></Link>
                 <Link href="/"><li className="pb-4 "><i className="fa fa-chevron-right"></i> Privacy Policy</li></Link>
                 <Link href="/"><li className="pb-4 "><i className="fa fa-chevron-right"></i> CopyRights</li></Link>
@@ -36,7 +43,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='mb-5'>
-            <h4><strong>Office Location</strong></h4>
+              <h4><strong>Office Location</strong></h4>
               WRJ8+6MV, Baddi,<br />
               Himachal Pradesh,<br />
               173205<br /><br />
@@ -47,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
