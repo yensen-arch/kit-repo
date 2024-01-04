@@ -123,9 +123,9 @@ const Header = () => {
             <img
                 src="Icon.svg"
                 alt="Close Icon"
-                className="h-7 mr-0 sm:hidden lg:block md:block"
+                className="h-7 mr-0 hidden lg:block md:block"
               />
-              <p className="mx-2 sm:hidden lg:block md:block">Profile</p>
+              <p className="mx-2 hidden lg:block md:block">Profile</p>
             {isDropdownOpen ? (
               <img
                 src="HamburgerOpen.svg"
