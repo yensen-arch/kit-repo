@@ -35,28 +35,28 @@ const Header = () => {
             >
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200 "
                 role="menuitem"
               >
-                Home
+              Home
               </Link>
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200"
                 role="menuitem"
               >
                 Services
               </Link>
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200"
                 role="menuitem"
               >
                 Media
               </Link>
               <Link
                 href="#"
-                className="flex lg:hidden md:hidden px-2 py-2 text-sm hover:border-b border-solid "
+                className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200"
                 role="menuitem"
               >
                 Contact us
@@ -66,21 +66,15 @@ const Header = () => {
                 className="block px-2 py-2 text-sm text-gray-700 hover:bg-orange-200  border-b border-solid "
                 role="menuitem"
               >
-                Change Industry
+                Sign in
               </Link>
-              <Link
-                href="#"
-                className="block px-2 py-2 text-sm text-gray-700 hover:bg-orange-200 border-b border-solid"
-                role="menuitem"
-              >
-                Personal Details
-              </Link>
+            
               <Link
                 href="#"
                 className="block px-2 py-2 text-sm text-gray-700 bg-slate-100 hover:bg-orange-200"
                 role="menuitem"
               >
-                Log Out
+                Log in
               </Link>
             </div>
           </div>
@@ -92,7 +86,7 @@ const Header = () => {
         <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Home
             </Link>
@@ -100,7 +94,7 @@ const Header = () => {
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Services
             </Link>
@@ -108,7 +102,7 @@ const Header = () => {
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Media
             </Link>
@@ -116,7 +110,7 @@ const Header = () => {
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="#"
-              className="text-gray-200 hover:border-b-2 border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Contact us
             </Link>
@@ -126,17 +120,24 @@ const Header = () => {
             onClick={toggleDropdown}
             className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-orange-200 hover:border-1 border-black  ml-auto"
           >
+            <img
+                src="Icon.svg"
+                alt="Close Icon"
+                className="h-7 mr-0 sm:hidden lg:block md:block"
+              />
+              <p className="mx-2 sm:hidden lg:block md:block">Profile</p>
             {isDropdownOpen ? (
               <img
                 src="HamburgerOpen.svg"
                 alt="Close Icon"
-                className="h-7 mr-0"
+                className="h-7 mr-0 lg:hidden md:hidden sm:block"
               />
+                             
             ) : (
               <img
                 src="HamburgerClosed.svg"
                 alt="Open Icon"
-                className="h-7 mr-0"
+                className="h-7 mr-0 lg:hidden md:hidden sm:block "
               />
             )}
           </button>
