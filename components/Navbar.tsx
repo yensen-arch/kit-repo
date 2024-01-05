@@ -14,13 +14,13 @@ const Header = () => {
       <div className="w-full  justify-start  py-0 pr-0 bg-orange-100">
         <div className="flex ">
           <Link href="https://commerce.gov.in/" target="_blank">
-            <img src="Min.webp" className="w-36 h-19 mx-8 pt-6" />
+            <img src="Min.webp" className="w-38 h-24 mx-8 mt-4 " />
           </Link>
-          <img src="MakeIndia.webp" className="w-36 h-24 ml-10 pt-4 pb-0" />
-          <div className="w-full flex justify-end  py-3 pr-1">
-            <img src="Azadi.webp" className="w-24 h-15 mx-4" />
+          <img src="MakeIndia.webp" className="hidden lg:block lg:w-36 lg:h-18 mx-16 my-3" />
+          <div className=" w-screen flex justify-end ">
+            <img src="Azadi.webp" className="hidden lg:block lg:w-28 lg:h-18 lg:mx-8 lg:my-3 md:h-18 md:mx-8 md:my-3" />
             <Link href="https://www.india.gov.in/" target="_blank">
-              <img src="nationalEmblem.png" className="w-16 h-15 ml-8" />
+              <img src="nationalEmblem.png" className="w-16 h-18 mx-8 my-3" />
             </Link>
           </div>
         </div>
