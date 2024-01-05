@@ -11,7 +11,7 @@ import MasterPayFine from '@/components/MasterPayFine'
 export default function Home() {
   return (
     <div className='bg-gray-100 min-h-screen'>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className='container mx-auto p-4 justify-center items-center flex flex-col gap-5'>
         {/* First Row */}
         <div className="flex flex-col gap-5 mx-auto lg:flex-row mb-8">

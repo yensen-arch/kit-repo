@@ -34,28 +34,28 @@ const Header = () => {
               aria-labelledby="options-menu"
             >
               <Link
-                href="#"
+                href="/"
                 className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200 "
                 role="menuitem"
               >
               Home
               </Link>
               <Link
-                href="#"
+                href="/services"
                 className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200"
                 role="menuitem"
               >
                 Services
               </Link>
               <Link
-                href="#"
+                href="/media"
                 className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200"
                 role="menuitem"
               >
                 Media
               </Link>
               <Link
-                href="#"
+                href="/contact"
                 className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200"
                 role="menuitem"
               >
@@ -85,7 +85,7 @@ const Header = () => {
         <ul className="flex pt-1  justify-start  sm:flex-sm">
         <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
-              href="#"
+              href="/"
               className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Home
@@ -93,7 +93,7 @@ const Header = () => {
           </li>
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
-              href="#"
+              href="/services"
               className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Services
@@ -101,7 +101,7 @@ const Header = () => {
           </li>
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
-              href="#"
+              href="/media"
               className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Media
@@ -109,7 +109,7 @@ const Header = () => {
           </li>
           <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
-              href="#"
+              href="/contact"
               className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
             >
               Contact us
