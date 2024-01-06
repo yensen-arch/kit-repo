@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ZoneDropdownButton from "./ZoneDropdownButton";
-import Checklist from "./Checklist";
+import FilterDropdown from "./FilterDropdown";
 import BillStatusDropdown from "./BillStatusDropdown";
+import Checklist from "./Checklist";
 
-const MasterBillDue = ({}) => {
+const ZonalBillDue = ({}) => {
   return (
     <div className=" bg-blue-100 p-2 rounded-2xl shadow-2xl">
       <div className="text-center text-3xl font-semibold text-black py-4 border-black border-b-2">
@@ -13,7 +13,7 @@ const MasterBillDue = ({}) => {
           <div className="flex w-full justify-between">
             <p className="text-2xl mx-6">BILL DETAILS</p>
             <div className=" mx-6 relative flex">
-              <ZoneDropdownButton />
+              <FilterDropdown />
               <BillStatusDropdown />
             </div>
           </div>
@@ -26,4 +26,4 @@ const MasterBillDue = ({}) => {
   );
 };
 
-export default MasterBillDue;
+export default ZonalBillDue;
