@@ -20,10 +20,10 @@ function Checklist() {
   };
 
   return (
-    <div className="max-w-auto mx-auto p-4 bg-white shadow-lg rounded-lg">
-      <ul className="space-y-2">
+    <div className="max-w-auto mx-auto p-4 bg-white rounded-lg">
+      <ul className="space-y-2 grid grid-cols-2">
         {checklist.map((item) => (
-          <li key={item.id} className="flex items-center">
+          <li key={item.id} className="flex items-center my-10 mx-10">
             <input
               id={`checkbox-${item.id}`}
               type="checkbox"
