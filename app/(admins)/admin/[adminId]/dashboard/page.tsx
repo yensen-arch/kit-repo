@@ -1,12 +1,26 @@
+import AdminCardGroup from "@/components/AdminCardGroup";
+import AdminCarousel from "@/components/AdminCarousel";
+import AdminImportantNotices from "@/components/AdminImportantNotices";
+import AdminAboutCard from "@/components/AdminAboutCard";
 
-// Change Password Page
-export default function AdminDashboard({params}) {
-    return (
-      <div className='bg-gray-100 min-h-screen'>
-      <h1 className="text-4xl text-center">
-        Welcome to the Admin Dashboard {params.adminId}
-         </h1>
+//Master adimin Dashboard
+export default function AdminDashboard({ params }) {
+  return (
+    <div className="bg-gray-100 min-h-screen">
+      <div className="p-6 pt-24">
+        <AdminCardGroup />
       </div>
-    )
-  }
-  
+      <div className="flex p-24">
+        <AdminImportantNotices />
+        <div className="p-6">
+          <div className="">
+            <AdminCarousel />
+          </div>
+          <div className="">
+            <AdminAboutCard />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

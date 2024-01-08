@@ -1,12 +1,8 @@
 import ImportantNotice from '../components/Important Notice'
 import NewsEvent from '../components/news-event'
-import Navbar from '../components/Navbar'
-import Image from 'next/image'
 import LoginForm from '@/components/LoginForm'
-import Footer from '@/components/Footer'
 import Carousel from '@/components/Carousel'
 import AboutCard from '@/components/aboutcard'
-import MasterPayFine from '@/components/MasterPayFine'
 
 export default function Home() {
   return (

@@ -9,7 +9,7 @@ const BillStatusDropdown = () => {
   return (
     <div className="relative inline-block">
       <button
-        className="flex mx-3 px-3 py-1 border border-solid text-lg rounded-xl bg-orange-100 hover:bg-orange-200 border-black  ml-auto"
+        className="flex mx-3 px-3 py-1 border border-solid text-lg rounded-xl bg-white hover:bg-slate-300 border-black  ml-auto"
         onClick={() => setDropdownOpen(!isDropdownOpen)}
       >
         Status
