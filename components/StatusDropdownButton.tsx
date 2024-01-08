@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const StatusDropdownButton = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -13,18 +14,22 @@ const StatusDropdownButton = () => {
       >
         Status
         {isDropdownOpen ? (
-                  <img
-                    src="upArrow.svg"
-                    alt="Close Icon"
-                    className="h-7 mr-0"
-                  />
-                ) : (
-                  <img
-                    src="downArrow.svg"
-                    alt="Open Icon"
-                    className="h-7 mr-0"
-                  />
-                )}
+          <Image
+            src="/Images/upArrow.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="h-7 mr-0"
+          />
+        ) : (
+          <img
+            src="/Images/downArrow.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="h-7 mr-0"
+          />
+        )}
       </button>
 
       {/* Dropdown Menu */}

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import ZoneDropdownButton from "./ZoneDropdownButton";
 
 const FineCardMasterAd = ({}) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -72,61 +73,10 @@ const FineCardMasterAd = ({}) => {
   ];
 
   return (
-    <div className="p-12">
       <div className=" bg-blue-100 p-2 rounded-2xl shadow-2xl">
         <div className=" text-center text-3xl font-semibold text-black py-4 border-black border-b-2">
           Welcome Admin{/*<-Admin is temp.Need user name from json */}
-          {isDropdownOpen && (
-            <div className=" absolute right-2 top-36 w-48 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10 ">
-              <div
-                className="py-1"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="options-menu"
-              >
-                <Link
-                  href="#"
-                  className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100  border-solid "
-                  role="menuitem"
-                >
-                  Zone 1
-                </Link>
-                <Link
-                  href="#"
-                  className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-t  border-solid"
-                  role="menuitem"
-                >
-                  Zone 2
-                </Link>
-                <Link
-                  href="#"
-                  className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  role="menuitem"
-                >
-                  Zone 3
-                </Link>
-              </div>
-            </div>
-          )}
-          <button
-            type="button"
-            onClick={toggleDropdown}
-            className="  flex  px-3 py-1 border border-solid text-lg rounded-xl bg-white hover:bg-slate-300 border-black  ml-auto"
-          ><p className="mx-2">Zone</p>
-            {isDropdownOpen ? (
-              <img
-                src="upArrow.svg"
-                alt="Close Icon"
-                className="h-7 mr-0"
-              />
-            ) : (
-              <img
-                src="downArrow.svg"
-                alt="Open Icon"
-                className="h-7 mr-0"
-              />
-            )}
-          </button>
+         <div className="flex justify-end"><ZoneDropdownButton/></div>
         </div>
         <div className="flex-row md:flex-row justify-center">
           <div className="border-black py-4 px-8 mb-8">
@@ -209,7 +159,6 @@ const FineCardMasterAd = ({}) => {
           </button>
         </div>
       </div>
-    </div>
   );
 };
 

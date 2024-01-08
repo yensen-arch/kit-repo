@@ -16,7 +16,7 @@ const MasterBillDue = ({}) => {
           <div className="flex w-full justify-between">
             <p className="text-2xl mx-2 pl-10 text-left">BILL DETAILS</p>
             <div className="flex mx-0 relative pr-2">
-              <ZoneDropdownButton/>
+              <ZoneDropdownButton />
               <BillStatusDropdown />
             </div>
           </div>

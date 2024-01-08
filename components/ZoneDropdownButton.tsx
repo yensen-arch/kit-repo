@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ZoneDropdownButton = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -13,18 +14,22 @@ const ZoneDropdownButton = () => {
       >
         Zone
         {isDropdownOpen ? (
-                  <img
-                    src="upArrow.svg"
-                    alt="Close Icon"
-                    className="h-7 mr-0"
-                  />
-                ) : (
-                  <img
-                    src="downArrow.svg"
-                    alt="Open Icon"
-                    className="h-7 mr-0"
-                  />
-                )}
+          <Image
+            src="/Images/upArrow.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="h-7 mr-0"
+          />
+        ) : (
+          <Image
+            src="/Images/downArrow.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="h-7 mr-0"
+          />
+        )}
       </button>
 
       {/* Dropdown Menu */}
@@ -44,7 +49,8 @@ const ZoneDropdownButton = () => {
               role="menuitem"
             >
               Zone 2
-            </Link><Link
+            </Link>
+            <Link
               href="#"
               className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100  border-solid "
               role="menuitem"
