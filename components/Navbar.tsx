@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -14,13 +15,37 @@ const Header = () => {
       <div className="w-full  justify-start  py-0 pr-0 bg-orange-100">
         <div className="flex ">
           <Link href="https://commerce.gov.in/" target="_blank">
-            <img src="Min.webp" className="w-38 h-24 mx-8 mt-4 " />
+            <Image
+              src="/Images/Min.webp"
+              alt="Commerce ministry"
+              width={200}
+              height={100}
+              className="mx-8 mt-4  mb-2"
+            />
           </Link>
-          <img src="MakeIndia.webp" className="hidden lg:block lg:w-36 lg:h-18 mx-16 my-3" />
+          <Image
+            src="/Images/MakeIndia.webp"
+            alt="MakeInIndia"
+            width={200}
+            height={100}
+            className="hidden lg:block lg:w-36  mx-16 my-3"
+          />
           <div className=" w-screen flex justify-end ">
-            <img src="Azadi.webp" className="hidden lg:block lg:w-28 lg:h-18 lg:mx-8 lg:my-3 md:h-18 md:mx-8 md:my-3" />
+            <Image
+              src="/Images/Azadi.webp"
+              alt="Independence"
+              width={200}
+              height={100}
+              className="hidden lg:block lg:w-28 lg:h-18 lg:mx-8 lg:my-3 md:h-18 md:mx-8 md:my-3"
+            />
             <Link href="https://www.india.gov.in/" target="_blank">
-              <img src="nationalEmblem.png" className="w-16 h-18 mx-8 my-3" />
+              <Image
+                src="/Images/nationalEmblem.png"
+                alt="National Emblem"
+                width={200}
+                height={100}
+                className="w-16 h-18 mx-8 my-3"
+              />
             </Link>
           </div>
         </div>
@@ -38,7 +63,7 @@ const Header = () => {
                 className="flex lg:hidden md:hidden px-2 py-2 text-sm border-b border-solid hover:bg-orange-200 "
                 role="menuitem"
               >
-              Home
+                Home
               </Link>
               <Link
                 href="/services"
@@ -68,7 +93,7 @@ const Header = () => {
               >
                 Sign in
               </Link>
-            
+
               <Link
                 href="#"
                 className="block px-2 py-2 text-sm text-gray-700 bg-slate-100 hover:bg-orange-200"
@@ -83,7 +108,7 @@ const Header = () => {
 
       <nav className="w-full px-4 bg-blue-700 p-2 ">
         <ul className="flex pt-1  justify-start  sm:flex-sm">
-        <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
+          <li className="hidden lg:flex md:flex md:px-6 sm:px-4 lg:px-8 mx-2">
             <Link
               href="/"
               className="text-gray-200 relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer border-gray-200 sm:text-sm md:text-base lg:text-lg xl:text-xl"
@@ -118,26 +143,31 @@ const Header = () => {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="  inline-flex items-center  px-5 py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-orange-200 hover:border-1 border-black  ml-auto"
+            className="  inline-flex items-center py-1 border border-solid font-medium rounded-2xl bg-white hover:bg-orange-200 hover:border-1 border-black ml-auto"
           >
-            <img
-                src="Icon.svg"
-                alt="Close Icon"
-                className="h-7 mr-0 hidden lg:block md:block"
-              />
-              <p className="mx-2 hidden lg:block md:block">Profile</p>
+            <Image
+              src="/Images/Icon.svg"
+              alt="Close Icon"
+              width={50}
+              height={50}
+              className="h-7 hidden lg:block md:block"
+            />
+            <p className="mr-3 hidden lg:block md:block">Profile</p>
             {isDropdownOpen ? (
-              <img
-                src="HamburgerOpen.svg"
+              <Image
+                src="/Images/HamburgerOpen.svg"
                 alt="Close Icon"
-                className="h-7 mr-0 lg:hidden md:hidden sm:block"
+                width={50}
+                height={50}
+                className="h-7  lg:hidden md:hidden sm:block"
               />
-                             
             ) : (
-              <img
-                src="HamburgerClosed.svg"
+              <Image
+                src="/Images/HamburgerClosed.svg"
                 alt="Open Icon"
-                className="h-7 mr-0 lg:hidden md:hidden sm:block "
+                width={50}
+                height={50}
+                className="h-7  lg:hidden md:hidden sm:block "
               />
             )}
           </button>
