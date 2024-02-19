@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+// import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const InfiniteCarousel = () => {
   const imageSources = [
@@ -84,10 +84,10 @@ const InfiniteCarousel = () => {
       </div>
       <div style={arrowContainerStyle}>
         <div style={arrowStyle} onClick={() => navigateTo('prev')}>
-          <FaChevronLeft size={30} />
+          {/* <FaChevronLeft size={30} /> */}
         </div>
         <div style={arrowStyle} onClick={() => navigateTo('next')}>
-          <FaChevronRight size={30} />
+          {/* <FaChevronRight size={30} /> */}
         </div>
       </div>
     </div>

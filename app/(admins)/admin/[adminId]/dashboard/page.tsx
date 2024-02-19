@@ -4,7 +4,7 @@ import AdminImportantNotices from "@/components/AdminImportantNotices";
 import AdminAboutCard from "@/components/AdminAboutCard";
 
 //Master adimin Dashboard
-export default function AdminDashboard({ params }) {
+export default function AdminDashboard({ params }: { params: any }) {
   return (
     <div className="bg-gray-100 min-h-screen">
       <div className="p-6 pt-24">
