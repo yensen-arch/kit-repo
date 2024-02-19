@@ -2,11 +2,12 @@ var pg = require('pg');
 const express = require('express');
 
 
+
 //or native libpq bindings
 //var pg = require('pg').native
 const app = express();
 
-var conString = process.env.DATABASE_URL || 'postgres://wmudujcj:shbB8zepIAIy1zP71oxMKBNBS79Is3WP@bubble.db.elephantsql.com/wmudujcj'
+var conString = process.env.DATABASE_URL || "postgres://wmudujcj:shbB8zepIAIy1zP71oxMKBNBS79Is3WP@bubble.db.elephantsql.com/wmudujcj"
 var client = new pg.Client(conString);
 client.connect(function(err) {
   if(err) {
