@@ -1,6 +1,6 @@
 import React from "react";
 
-const FineCard = ({}) => {
+const FineCard = ({userId}: {userId: string}) => {
   const finesDue = [
     {
       industry: "DEF",
@@ -67,7 +67,7 @@ const FineCard = ({}) => {
     <div className="p-12">
       <div className=" bg-blue-100 p-2 rounded-2xl shadow-2xl">
         <div className=" text-center text-3xl font-semibold text-black py-4 border-black border-b-2">
-          Welcome Admin{/*<-Admin is temp.Need user name from json */}
+          Welcome {userId}{/*<-Admin is temp.Need user name from json */}
         </div>
         <div className="flex-row md:flex-row justify-center">
           <div className="border-black py-4 px-8 mb-8">
