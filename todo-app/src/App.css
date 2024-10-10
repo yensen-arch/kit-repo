@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  background: linear-gradient(90deg, blueviolet, teal, coral);
+  background-size: 300% 100%;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "lobster", sans-serif;
+  font-size: 2rem;
+  animation: gradientAnimation 10s ease infinite; /* Apply animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  margin: 12px;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.delBtn:hover {
+  background-color: rgb(105, 19, 19);
+  color: red;
+  transition: all 0.5s;
+}
+.cmpltBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.cmpltBtn:hover {
+  background-color: rgb(31, 164, 31);
+  color: rgb(229, 236, 229);
+  transition: all 0.5s;
+}
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  margin: 20px;
+}
+.addBtn {
+  background-color: rgb(62, 212, 246);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background-color: rgb(31, 164, 31);
+  color: rgb(229, 236, 229);
+  transition: all 0.5s;
+}
+.btns button {
+  margin: 8px;
+}
+ul li {
+  list-style-type: none;
+  transition: all 0.9s;
+}
